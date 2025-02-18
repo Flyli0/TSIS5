@@ -60,3 +60,15 @@ print(sss)
 ss = str(input())
 sss = re.split('[A-Z]',ss)
 print(sss)
+
+'''''''''''''''''''''''''''''''''Task9'''''''''''''''''''''''''''''''''
+
+ss = str(input())
+sss = re.sub(r'([a-z])([A-Z])', r'\1 \2',ss)
+print(sss)
+
+'''''''''''''''''''''''''''''''''Task10'''''''''''''''''''''''''''''''''
+import re
+ss = str(input())
+sss = re.sub(r'([a-z])([A-Z])', r'\1_\2',ss)
+print(sss)
