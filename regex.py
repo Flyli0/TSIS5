@@ -44,15 +44,19 @@ else:
     print('Not match')
 
 '''''''''''''''''''''''''''''''''Task6'''''''''''''''''''''''''''''''''
-import re
+
 ss = str(input())
 sss = re.sub('[ ,.]',':',ss)
 print(sss)
 
 '''''''''''''''''''''''''''''''''Task7'''''''''''''''''''''''''''''''''
-import re
+
 ss = str(input())
 sss = re.sub('_([a-z])',lambda letter: letter.group(1).upper(),ss)
 print(sss)
 
-'''''''''''''''''''''''''''''''''Task7'''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''Task8'''''''''''''''''''''''''''''''''
+
+ss = str(input())
+sss = re.split('[A-Z]',ss)
+print(sss)
